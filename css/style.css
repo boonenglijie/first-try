@@ -913,7 +913,9 @@ Responsive Design
 
 /* 视频修复：不裁剪、不变形 */
 .fixed-video {
-  margin-bottom: 2rem;
+  width: 100%;
+  height: auto;
+  overflow: visible;
 }
 .fixed-video h3 {
   color: var(--secondary-color);
