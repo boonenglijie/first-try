@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>麻团的个猫网页</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="header-inner">
+        <a href="index.html" class="logo">M<span>T</span></a>
+        <button
+          class="menu-toggle"
+          onclick="document.querySelector('nav').classList.toggle('open')"
+          aria-label="打开导航菜单"
+        >
+          ☰
+        </button>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="active">首页</a></li>
+            <li><a href="about.html">关于麻团</a></li>
+            <li><a href="works.html">相册集</a></li>
+            <li><a href="contact.html">联系麻团</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>你好，我是<span>麻团</span></h1>
+        <p class="subtitle">
+          爬高跑酷爱好者  |  睡觉才给抱的机灵猫  |  不伸爪子但也不给摸的清醒小猫
+        </p>
+        <div class="hero-cta">
+          <a href="works.html" class="btn btn-primary">查看信息</a>
+          <a href="about.html" class="btn btn-outline">了解更多</a>
+        </div>
+      </section>
+
+    <section class="skills-section">
+      <h3>麻团的核心技能</h3>
+      <div class="skills-grid">
+        <div class="skill-item stagger-1">
+          <div class="skill-icon">睡</div>  
+          <span class="skill-name">SLEEP</span>
+        </div>
+        <div class="skill-item stagger-2">
+          <div class="skill-icon">跳</div>
+          <span class="skill-name">JUMP</span>
+        </div>
+        <div class="skill-item stagger-3">
+          <div class="skill-icon">咬</div>
+          <span class="skill-name">BITE</span>
+        </div>
+        <div class="skill-item stagger-4">
+          <div class="skill-icon">蹭</div>
+          <span class="skill-name">RUB</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="works-section" style="margin-top: 2rem;">
+      <h1>精选作品</h1>
+      <p class="section-desc">以下是麻团的近况，欢迎点击查看更多</p>
+      <div class="works-grid">
+        <div class="work-card">
+          <div class="work-card-img">猫猫休息</div>
+          <div class="work-info">
+            <h3>麻团的休息方式</h3>
+            <p>困了才粘人，因为要枕着人腿睡觉，非常可爱！</p>
+            <div class="work-tags">
+              <span class="tag">MT</span>
+              <span class="tag">VERY CUTE</span>
+              <span class="tag">SLEEP</span>
+            </div>
+          </div>
+        </div>
+      <div class="work-card">
+        <div class="work-card-img">猫猫玩具</div>
+        <div class="work-info">
+          <h3>查看麻团的玩具</h3>
+          <p>基于拼多多实现的猫猫玩具库，麻团喜欢的一直玩，不喜欢的就不玩，是一只有取舍的小猫。</p>
+          <div class="work-tags">
+            <span class="tag">TOY</span>
+            <span class="tag">很敏捷</span>
+            <span class="tag">PLAY</span>
+          </div>
+        </div>
+      </div>
+      <div class="work-card">
+        <div class="work-card-img">猫猫饮食</div>
+        <div class="work-info">
+          <h3>麻团食物展示页</h3>
+          <p>肠，小鱼干，猫粮，猫条和水，麻团不是一只挑食的小猫。</p>
+          <div class="work-tags">
+            <span class="tag">FOOD</span>
+            <span class="tag">吃了睡，醒了玩，累了饿</span>
+            <span class="tag">喜欢吃</span>
+          </div>
+        </div>
+      </div>
+      <div style="text-align: center;margin-top: 2rem;">
+        <a href="works.html" class="btn btn-outline">查看全部信息 →</a>
+      </div>
+    </section>
+ </main>
+
+ <footer>
+   <div class="footer-inner">
+     <div class="footer-social">
+       <a href="#" aria-label="GitHub">GH</a>
+       <a href="#" aria-label="微信">WX</a>
+       <a href="#" aria-label="B站">BZ</a>
+       <a href="#" aria-label="邮箱">EM</a>
+     </div>
+     <p class="footer-copy">© 2025 麻团的个猫网页 - 从零到一打造</p>
+   </div>
+ </footer>
+</body>
+</html>

@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>相册集 | 麻团的个猫网页</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-inner">
+        <a href="index.html" class="logo">M<span>T</span></a>
+        <button
+          class="menu-toggle"
+          onclick="document.querySelector('nav').classList.toggle('open')"
+          aria-label="打开导航菜单"
+        >
+          ☰
+        </button>
+        <nav>
+          <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="about.html">关于麻团</a></li>
+            <li><a href="works.html" class="active">相册集</a></li>
+            <li><a href="contact.html">联系麻团</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="album-page">
+      <div class="fixed-video">
+        <h3 style="font-size: 25px">麻团の视频🐈</h3>
+        <video
+          class="auto-once-video"
+          autoplay
+          muted
+          playsinline
+          controls
+          preload="auto"
+        >
+          <source src="MT_video.mp4" type="video/mp4" />
+          你的浏览器不支持视频播放
+        </video>
+      </div>
+      <!-- 左侧侧边栏分类 -->
+      <div class="album-wrap">
+        <aside class="album-sidebar">
+          <h2>麻团相册分类</h2>
+          <ul class="album-list">
+            <li class="album-item" data-target="img1">日常躺平</li>
+            <li class="album-item" data-target="img2">干饭瞬间</li>
+            <li class="album-item" data-target="img3">玩耍抓拍</li>
+            <li class="album-item" data-target="img4">睡觉丑照</li>
+            <li class="album-item" data-target="img5">不知道在干啥</li>
+          </ul>
+        </aside>
+
+        <section class="album-main">
+          <!-- 图片切换区域 -->
+          <div class="album-img-box">
+            <div class="album-img active" id="img1">
+              <div class="img-wrap">
+                <img
+                  src="MT日常躺平1.jpg"
+                  alt="日常躺平"
+                  onclick="openImg(this.src)"
+                />
+                <span class="img-tip"
+                  >最近做网页天天拍，麻团也好奇人类干啥呢吧😂</span
+                >
+              </div>
+              <div class="img-wrap">
+                <img
+                  src="MT日常躺平2.jpg"
+                  alt="日常躺平"
+                  onclick="openImg(this.src)"
+                />
+              </div>
+              <div class="img-wrap">
+                <img
+                  src="MT日常躺平3.jpg"
+                  alt="日常躺平"
+                  onclick="openImg(this.src)"
+                />
+                <span class="img-tip">猫儿这个舒适😌</span>
+              </div>
+              <div class="img-wrap">
+                <img
+                  src="MT日常躺平4.jpg"
+                  alt="日常躺平"
+                  onclick="openImg(this.src)"
+                />
+              </div>
+              <div class="img-wrap">
+                <img
+                  src="MT日常躺平5.jpg"
+                  alt="日常躺平"
+                  onclick="openImg(this.src)"
+                />
+              </div>
+              <div class="img-wrap">
+                <img
+                  src="MT日常躺平6.jpg"
+                  alt="日常躺平"
+                  onclick="openImg(this.src)"
+                />
+                <span class="img-tip"
+                  >漂亮小猫(♥∀♥)！好看！Very very very beautiful！</span
+                >
+              </div>
+              <div class="img-wrap">
+                <img
+                  src="MT日常躺平7.jpg"
+                  alt="日常躺平"
+                  onclick="openImg(this.src)"
+                />
+              </div>
+              <div class="img-wrap">
+                <img
+                  src="MT日常躺平8.jpg"
+                  alt="日常躺平"
+                  onclick="openImg(this.src)"
+                />
+                <span class="img-tip">莫名有种犯错被训的感觉</span>
+              </div>
+              <div class="img-wrap">
+                <img
+                  src="MT日常躺平9.jpg"
+                  alt="日常躺平"
+                  onclick="openImg(this.src)"
+                />
+              </div>
+              <div class="img-wrap">
+                <img
+                  src="MT日常躺平10.jpg"
+                  alt="日常躺平"
+                  onclick="openImg(this.src)"
+                />
+              </div>
+            </div>
+            <div class="album-img" id="img2">
+              <div class="img-wrap">
+                <img
+                  src="MT干饭瞬间1.jpg"
+                  alt="干饭瞬间"
+                  onclick="openImg(this.src)"
+                />
+              </div>
+              <div class="img-wrap">
+                <img
+                  src="MT干饭瞬间2.jpg"
+                  alt="干饭瞬间"
+                  onclick="openImg(this.src)"
+                />
+                <span class="img-tip"
+                  >可能是因为一直拍，小猫好奇又有点不耐烦了吧😹</span
+                >
+              </div>
+              <div class="img-wrap">
+                <img
+                  src="MT干饭瞬间3.jpg"
+                  alt="干饭瞬间"
+                  onclick="openImg(this.src)"
+                />
+              </div>
+              <div class="img-wrap">
+                <img
+                  src="MT干饭瞬间4.jpg"
+                  alt="干饭瞬间"
+                  onclick="openImg(this.src)"
+                />
+                <span class="img-tip">香！给到夯👌</span>
+              </div>
+              <div class="img-wrap">
+                <img
+                  src="MT干饭瞬间5.jpg"
+                  alt="干饭瞬间"
+                  onclick="openImg(this.src)"
+                />
+              </div>
+              <div class="img-wrap">
+                <img
+                  src="MT干饭瞬间6.jpg"
+                  alt="干饭瞬间"
+                  onclick="openImg(this.src)"
+                />
+              </div>
+            </div>
+            <div class="album-img" id="img3">
+              <div class="img-wrap">
+                <img
+                  src="MT玩耍抓拍1.jpg"
+                  alt="玩耍抓拍"
+                  onclick="openImg(this.src)"
+                />
+                <span class="img-tip"
+                  >最近特别喜欢上蹿下跳，尤其是椅子背和人后背</span
+                >
+              </div>
+              <div class="img-wrap">
+                <img
+                  src="MT玩耍抓拍2.jpg"
+                  alt="玩耍抓拍"
+                  onclick="openImg(this.src)"
+                />
+              </div>
+              <div class="img-wrap">
+                <img
+                  src="MT玩耍抓拍3.jpg"
+                  alt="玩耍抓拍"
+                  onclick="openImg(this.src)"
+                />
+                <span class="img-tip"
+                  >有点丑，再吃胖儿点就好了❤️，尾巴都甩出残影了</span
+                >
+              </div>
+              <div class="img-wrap">
+                <img
+                  src="MT玩耍抓拍4.jpg"
+                  alt="玩耍抓拍"
+                  onclick="openImg(this.src)"
+                />
+              </div>
+              <div class="img-wrap">
+                <img
+                  src="MT玩耍抓拍5.jpg"
+                  alt="玩耍抓拍"
+                  onclick="openImg(this.src)"
+                />
+                <span class="img-tip">3块钱新购入的逗猫棒——很喜欢🥰</span>
+              </div>
+              <div class="img-wrap">
+                <img
+                  src="MT玩耍抓拍6.jpg"
+                  alt="玩耍抓拍"
+                  onclick="openImg(this.src)"
+                />
+                <span class="img-tip">后面那个球虽是旧爱，但也没失宠哈</span>
+              </div>
+              <div class="img-wrap">
+                <img
+                  src="MT玩耍抓拍7.jpg"
+                  alt="玩耍抓拍"
+                  onclick="openImg(this.src)"
+                />
+                <span class="img-tip">依旧三块钱购入新玩具——爱玩😻，</span>
+              </div>
+              <div class="img-wrap">
+                <img
+                  src="MT玩耍抓拍8.jpg"
+                  alt="玩耍抓拍"
+                  onclick="openImg(this.src)"
+                />
+                <span class="img-tip"
+                  >麻团甚至可以伸两个爪子通过洞抓住球，聪明的小猫！</span
+                >
+              </div>
+            </div>
+            <div class="album-img" id="img4">
+              <div class="img-wrap">
+                <img
+                  src="MT睡觉丑照1.jpg"
+                  alt="睡觉丑照"
+                  onclick="openImg(this.src)"
+                />
+                <span class="img-tip">其实我觉得这张挺好看的😌</span>
+              </div>
+              <div class="img-wrap">
+                <img
+                  src="MT睡觉丑照2.jpg"
+                  alt="睡觉丑照"
+                  onclick="openImg(this.src)"
+                />
+                <span class="img-tip">这张就很丑了😄</span>
+              </div>
+            </div>
+            <div class="album-img" id="img5">
+              <div class="img-wrap">
+                <img
+                  src="MT不知道在干啥1.jpg"
+                  alt="不知道在干啥"
+                  onclick="openImg(this.src)"
+                />
+                <span class="img-tip">大眼小猫😻！</span>
+              </div>
+              <div class="img-wrap">
+                <img
+                  src="MT不知道在干啥2.jpg"
+                  alt="不知道在干啥"
+                  onclick="openImg(this.src)"
+                />
+              </div>
+              <div class="img-wrap">
+                <img
+                  src="MT不知道在干啥3.jpg"
+                  alt="不知道在干啥"
+                  onclick="openImg(this.src)"
+                />
+                <span class="img-tip">不给摸，好多人摸嫌烦了😒</span>
+              </div>
+              <div class="img-wrap">
+                <img
+                  src="MT不知道在干啥4.jpg"
+                  alt="不知道在干啥"
+                  onclick="openImg(this.src)"
+                />
+              </div>
+              <div class="img-wrap">
+                <img
+                  src="MT不知道在干啥5.jpg"
+                  alt="不知道在干啥"
+                  onclick="openImg(this.src)"
+                />
+                <span class="img-tip">醒着的时候不给摸，一直跑🐈</span>
+              </div>
+              <div class="img-wrap">
+                <img
+                  src="MT不知道在干啥6.jpg"
+                  alt="不知道在干啥"
+                  onclick="openImg(this.src)"
+                />
+              </div>
+              <div class="img-wrap">
+                <img
+                  src="MT不知道在干啥7.jpg"
+                  alt="不知道在干啥"
+                  onclick="openImg(this.src)"
+                />
+                <span class="img-tip">👀你看我干啥！</span>
+              </div>
+              <div class="img-wrap">
+                <img
+                  src="MT不知道在干啥8.jpg"
+                  alt="不知道在干啥"
+                  onclick="openImg(this.src)"
+                />
+              </div>
+              <div class="img-wrap">
+                <img
+                  src="MT不知道在干啥9.jpg"
+                  alt="不知道在干啥"
+                  onclick="openImg(this.src)"
+                />
+                <span class="img-tip"
+                  >家人喂麻雀吸引到它了，跑过去歪头看🧐</span
+                >
+              </div>
+              <div class="img-wrap">
+                <img
+                  src="MT不知道在干啥10.jpg"
+                  alt="不知道在干啥"
+                  onclick="openImg(this.src)"
+                />
+              </div>
+              <div class="img-wrap">
+                <img
+                  src="MT不知道在干啥11.jpg"
+                  alt="不知道在干啥"
+                  onclick="openImg(this.src)"
+                />
+              </div>
+              <div class="img-wrap">
+                <img
+                  src="MT不知道在干啥12.jpg"
+                  alt="不知道在干啥"
+                  onclick="openImg(this.src)"
+                />
+                <span class="img-tip">莫名忧郁😢</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script>
+      const items = document.querySelectorAll(".album-item");
+      const imgBoxes = document.querySelectorAll(".album-img");
+
+      items.forEach((item) => {
+        item.addEventListener("mouseenter", () => {
+          // 清除所有激活状态
+          imgBoxes.forEach((box) => box.classList.remove("active"));
+          items.forEach((li) => li.classList.remove("active"));
+
+          // 当前条目激活
+          item.classList.add("active");
+          const targetId = item.getAttribute("data-target");
+          // 同步显示对应图片、对应视频
+          document.getElementById(targetId).classList.add("active");
+        });
+      });
+      // 页面默认激活第一项
+      items[0].classList.add("active");
+      // 视频仅自动播放一次，结束后停止自动播放
+      window.addEventListener("load", function () {
+        const video = document.querySelector(".auto-once-video");
+        if (!video) return;
+        // 捕获自动播放拦截报错，不阻断页面
+        const tryPlay = async () => {
+          try {
+            await video.play();
+          } catch (err) {
+            console.log("浏览器拦截自动播放，请手动点击播放按钮");
+          }
+        };
+        tryPlay();
+        // 播放结束自动暂停，不再自动重播
+        video.addEventListener("ended", function () {
+          this.pause();
+          this.autoplay = false;
+        });
+      });
+      // 图片放大弹窗逻辑
+      function openImg(src) {
+        // 创建遮罩层
+        const mask = document.createElement("div");
+        mask.id = "imgMask";
+        mask.style.cssText = `
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    cursor: zoom-out;
+  `;
+        // 创建大图
+        const bigImg = document.createElement("img");
+        bigImg.src = src;
+        bigImg.style.cssText = `
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    border-radius: 6px;
+  `;
+        // 点击遮罩任意位置关闭
+        mask.onclick = function () {
+          mask.remove();
+        };
+        mask.appendChild(bigImg);
+        document.body.appendChild(mask);
+      }
+    </script>
+
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-social">
+          <a href="#" aria-label="GitHub">GH</a>
+          <a href="#" aria-label="微博">WB</a>
+          <a href="#" aria-label="知乎">ZH</a>
+          <a href="#" aria-label="邮箱">EM</a>
+        </div>
+        <p class="footer-copy">© 2025 麻团的个猫网页 - 从零到一打造</p>
+      </div>
+    </footer>
+  </body>
+</html>
