@@ -920,15 +920,15 @@ Responsive Design
   margin-bottom: 1rem;
 }
 .fixed-video video {
-  width: 100%;
-  height: auto;
-  max-height: 450px;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-sm);
-  /* 关键：完整显示画面，不裁切 */
-  object-fit: contain;
-  background: #000; /* 黑底填充空白区域 */
-  display: block;
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 16/9 !important; /* 改成你视频真实的宽高比，竖屏就写9/16 */
+  max-height: unset !important;
+  display: block !important;
+  object-fit: contain !important;
+  background: #000 !important;
+  border-radius: var(--radius-lg) !important;
+  box-shadow: var(--shadow-sm) !important;
 }
 
 /* 图片外层容器，预留固定高度，防止页面上下跳动 */
