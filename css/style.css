@@ -911,28 +911,6 @@ Responsive Design
   padding-left: 1.8rem;
 }
 
-/* 视频修复：不裁剪、不变形 */
-.fixed-video {
-  width: 100%;
-  height: auto;
-  overflow: visible;
-}
-.fixed-video h3 {
-  color: var(--secondary-color);
-  margin-bottom: 1rem;
-}
-.fixed-video video {
-  width: 100% !important;
-  height: auto !important;
-  aspect-ratio: 720 / 1280 !important; /* 改成你视频真实的宽高比，竖屏就写9/16 */
-  max-height: unset !important;
-  display: block !important;
-  object-fit: contain !important;
-  background: #000 !important;
-  border-radius: var(--radius-lg) !important;
-  box-shadow: var(--shadow-sm) !important;
-}
-
 /* 图片外层容器，预留固定高度，防止页面上下跳动 */
 .album-img-box {
   min-height: 560px;
