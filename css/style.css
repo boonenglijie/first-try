@@ -924,7 +924,7 @@ Responsive Design
 .fixed-video video {
   width: 100% !important;
   height: auto !important;
-  aspect-ratio: 16/9 !important; /* 改成你视频真实的宽高比，竖屏就写9/16 */
+  aspect-ratio: 720 / 1280 !important; /* 改成你视频真实的宽高比，竖屏就写9/16 */
   max-height: unset !important;
   display: block !important;
   object-fit: contain !important;
